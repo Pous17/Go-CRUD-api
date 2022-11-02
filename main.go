@@ -25,7 +25,7 @@ func main() {
 	RegisterProductRoutes(router)
 	RegisterCategoryRoutes(router)
 
-	log.Println(fmt.Sprintf("Starting Server on port %s", AppConfig.Port))
+	log.Printf(fmt.Sprintf("Starting Server on port %s", AppConfig.Port))
 	log.Fatal(http.ListenAndServe(fmt.Sprintf(":%v", AppConfig.Port), router))
 }
 

@@ -56,7 +56,7 @@ conetent-type: application/json
 
 // Get category by id
 
-GET http://{{host}}/api/category/0 HTTP/1.1
+GET http://{{host}}/api/category/3 HTTP/1.1
 content-type: application/json
 
 ###
@@ -70,8 +70,13 @@ content-type: application/json
 
 // Update category
 
-POST http://{{host}}/api/category/2 HTTP/1.1
+POST http://{{host}}/api/category/3 HTTP/1.1
 content-type: application/json
+
+{
+    "name": "Updated category",
+    "color": "green"
+}
 
 ###
 
