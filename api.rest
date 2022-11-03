@@ -70,7 +70,7 @@ content-type: application/json
 
 // Update category
 
-POST http://{{host}}/api/category/3 HTTP/1.1
+PUT http://{{host}}/api/category/3 HTTP/1.1
 content-type: application/json
 
 {
